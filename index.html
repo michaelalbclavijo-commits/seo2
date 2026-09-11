@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#1e1b1c", "on-secondary-container": "#546755", "on-primary": "#ffffff", "surface-container-low": "#fbf1f2", "outline": "#88726c", "secondary-fixed": "#d3e8d1", "surface": "#fff8f8", "on-primary-fixed": "#3b0900", "on-surface-variant": "#55433e", "surface-container": "#f5eced", "tertiary-fixed": "#ebe2d0", "surface-tint": "#99452d", "secondary": "#506351", "surface-container-highest": "#e9e0e1", "secondary-container": "#d0e5ce", "on-tertiary-container": "#ffffff", "on-tertiary": "#ffffff", "tertiary-container": "#7d7668", "primary": "#96432b", "on-secondary-fixed-variant": "#394b3a", "tertiary-fixed-dim": "#cec6b5", "on-tertiary-fixed": "#1f1b11", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "tertiary": "#635e50", "on-error-container": "#93000a", "inverse-primary": "#ffb5a0", "on-error": "#ffffff", "on-background": "#1e1b1c", "primary-fixed": "#ffdbd1", "surface-bright": "#fff8f8", "primary-fixed-dim": "#ffb5a0", "inverse-surface": "#342f30", "secondary-fixed-dim": "#b7ccb6", "on-primary-container": "#fffbff", "on-primary-fixed-variant": "#7a2f18", "on-secondary-fixed": "#0e1f11", "background": "#fff8f8", "surface-dim": "#e1d8d9", "surface-container-high": "#efe6e7", "surface-variant": "#e9e0e1", "primary-container": "#b55b41", "on-secondary": "#ffffff", "error-container": "#ffdad6", "inverse-on-surface": "#f8efef", "on-tertiary-fixed-variant": "#4c463a", "outline-variant": "#dbc1ba" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xl": "4rem", "gutter-desktop": "2rem", "container-max": "1280px", "space-lg": "1.5rem", "space-xl": "2.5rem", "gutter-tablet": "1.5rem", "space-xxs": "0.25rem", "space-sm": "0.75rem", "space-md": "1rem", "space-3xl": "6rem", "space-xs": "0.5rem", "gutter-mobile": "1rem" }, "fontFamily": { "headline-md": [ "Playfair Display" ], "display-hero-mobile": [ "Playfair Display" ], "title-editorial": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-lg": [ "Playfair Display" ], "body-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-sm": [ "Playfair Display" ], "label-md": [ "Plus Jakarta Sans" ], "display-hero": [ "Playfair Display" ], "label-caps": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Playfair Display" ] }, "fontSize": { "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "display-hero-mobile": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "title-editorial": [ "18px", { "lineHeight": "26px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "30px", "fontWeight": "400" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "fontWeight": "500" } ], "label-md": [ "14px", { "lineHeight": "20px", "fontWeight": "500" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "label-caps": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" } ], "headline-lg-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 transition-all duration-300"><div class="bg-surface-container-high/90 backdrop-blur-md"><div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop py-2 flex items-center justify-between"><div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary">spa</span><p class="font-label-caps text-label-caps tracking-widest text-on-surface-variant uppercase">Atención personalizada para cada tipo de cabello · Reserva previa vía WhatsApp</p></div><div class="hidden md:flex items-center gap-4 text-on-surface-variant"><span class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary">schedule</span> Citas Programadas</span><span class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-primary">location_on</span> [CIUDAD], [PAÍS]</span></div></div></div><div class="bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(35,31,32,0.04)]"><div class="h-20 max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop flex items-center justify-between gap-4"><div class="flex items-center gap-3 flex-shrink-0"><img alt="Logo Aleja Mc" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VMs85Jwvzs6xi2rZmtlgeJwpZcSsEJOuVYgeniywUydqD02mRVZbgOCmyhhLy4LbK-kTlJ1gcsUk7V1HkQ2bG2-zUxkA3GTuku3mQOvGf8m7neWuxZesODTWf3FgJqKW3gJwFecEpSvlV3fLSdYxO63GJOlgY21pO37yyCRJTu9K9fYeclJsFvqZkuSWbBXPCb2RY63M0Tb1l-Xwuo9caOzOrj9KNjxjfakZYMGZvDKOf9drqU_EC8fQ"/><div class="flex flex-col"><span class="font-title-editorial text-title-editorial text-on-surface leading-tight font-semibold">Aleja Mc</span><span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider">Cuidado Capilar</span></div></div><nav class="hidden xl:flex items-center gap-6" data-active-classes="text-primary font-semibold border-b-2 border-primary"><a aria-current="page" class="transition-colors py-1 text-primary font-semibold border-b-2 border-primary" data-path="inicio" href="#">Inicio</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" data-path="sobre-aleja" href="#">Sobre Aleja</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" data-path="servicios" href="#">Servicios</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" data-path="tipos-de-cabello" href="#">Tipos de Cabello</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" data-path="experiencia" href="#">Experiencia</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" data-path="blog" href="#">Blog</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" data-path="preguntas-frecuentes" href="#">Preguntas Frecuentes</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" data-path="contacto" href="#">Contacto</a></nav><div class="flex items-center gap-3 flex-shrink-0"><a class="inline-flex items-center justify-center bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full shadow-[0_4px_14px_rgba(150,67,43,0.18)] hover:scale-[1.01] transition-all duration-200" data-path="agenda-tu-cita" href="#">Agenda tu Cita</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYYbtfBJeL39tP5Txhuy8Mdzeohv2xB1VfPNO1vH2m2clRG7E8Vm7MStvuSNFoszLSUrTae2cdkeT2tffF8aXSE4yAOEY4h30Ro1qllYZXOEMWQxfY-GCYLf2k32vCvtJ65yQldwFZn-pe32LjK_FyoCB9Xs2E2lNzY0aWefQLmoj7xQXRBYNgkgUm0CDnPJHARLJV0H0BanwTxipbcZEV9A-HmvmmDCuVpfmyZRTJI8rITj21xjqI"/></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- SCHEMA.ORG SEO & AI-SEARCH METADATA (JSON-LD) -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BeautySalon",
+        "@id": "https://alejamc.com/#salon",
+        "name": "Aleja Mc - Cuidado & Salud Capilar",
+        "url": "https://alejamc.com",
+        "logo": "https://lh3.googleusercontent.com/aida/AEtjO1VMs85Jwvzs6xi2rZmtlgeJwpZcSsEJOuVYgeniywUydqD02mRVZbgOCmyhhLy4LbK-kTlJ1gcsUk7V1HkQ2bG2-zUxkA3GTuku3mQOvGf8m7neWuxZesODTWf3FgJqKW3gJwFecEpSvlV3fLSdYxO63GJOlgY21pO37yyCRJTu9K9fYeclJsFvqZkuSWbBXPCb2RY63M0Tb1l-Xwuo9caOzOrj9KNjxjfakZYMGZvDKOf9drqU_EC8fQ",
+        "image": "https://alejamc.com/assets/aleja-mc-studio.jpg",
+        "description": "Descubre una experiencia personalizada de salud y belleza capilar con Aleja Mc. Asesoría, diagnóstico y tratamientos a medida para cabello liso, rizado, ondulado y afro en [CIUDAD].",
+        "telephone": "+0000000000",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "[DIRECCIÓN COMPLETA]",
+          "addressLocality": "[CIUDAD]",
+          "addressRegion": "[ZONA O BARRIO]",
+          "addressCountry": "[PAÍS]"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://alejamc.com/#aleja",
+        "name": "Aleja Mc",
+        "jobTitle": "Especialista en Diagnóstico y Salud Capilar",
+        "worksFor": { "@id": "https://alejamc.com/#salon" },
+        "description": "Profesional dedicada al cuidado consciente, nutrición capilar y revalorización del patrón natural de la hebra."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://alejamc.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cómo sé qué tratamiento necesita mi cabello antes de ir?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No te preocupes por elegir el servicio exacto antes de tu cita. Todas nuestras sesiones inician con un diagnóstico capilar exhaustivo donde analizamos porosidad, elasticidad y estado del cuero cabelludo para definir el tratamiento idóneo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Atiendes todo tipo de texturas de cabello?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. En Aleja Mc contamos con protocolos técnicos específicos adaptados para cabello liso, ondulado, rizado y afro, respetando la morfología única de cada fibra."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo puedo reservar mi cita y con cuánta anticipación?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las reservas se gestionan vía WhatsApp oficial con cita previa. Recomendamos agendar con 1 o 2 semanas de anticipación para garantizar tu cupo personalizado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué debo hacer antes de asistir a mi cita?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Asistir con el cabello libre de peinados tirantes o productos fijadores pesados para poder evaluar su textura real y la salud del cuero cabelludo en su estado más genuino."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<!-- EDITORIAL META & AI SEARCH CONTEXT (Non-intrusive metadata strip) -->
+<section class="w-full bg-surface-container-low/70 py-2.5 px-gutter-mobile md:px-gutter-desktop">
+<div class="max-w-container-max mx-auto flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">
+          Diagnóstico y Asesoría Capilar en [CIUDAD], [PAÍS]
+        </span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm">
+<span class="hidden sm:inline">Tratamientos a medida: Liso, Ondulado, Rizado &amp; Afro</span>
+<span class="font-label-caps text-label-caps text-primary bg-primary-fixed/40 px-2 py-0.5 rounded-full">Cupos Limitados</span>
+</div>
+</div>
+</section>
+<!-- 1. HERO SECTION -->
+<section class="w-full relative overflow-hidden bg-surface pt-space-xl md:pt-space-2xl pb-space-2xl md:pb-space-3xl">
+<div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Left: Editorial Content & Typography -->
+<div class="lg:col-span-7 flex flex-col z-10">
+<div class="inline-flex items-center gap-2 mb-space-md self-start px-3 py-1 rounded-full bg-surface-container">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Atención 100% Personalizada</span>
+</div>
+<h1 class="font-headline-lg lg:font-display-hero text-headline-lg lg:text-display-hero text-on-surface mb-space-md leading-[1.08] tracking-tight">
+            Cuidado, confianza y belleza para <span class="italic font-normal text-primary">cada tipo de cabello.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-space-xl max-w-xl leading-relaxed">
+            En Aleja Mc creemos que cada cabello es único. Te acompañamos a conocerlo, cuidarlo y potenciar su belleza natural con una experiencia personalizada, cercana y pensada exclusivamente para ti.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 mb-space-xl">
+<a class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-8 py-3.5 rounded-full shadow-md hover:scale-[1.01] transition-all" href="#contacto">
+<span>Agenda tu cita</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md px-6 py-3.5 rounded-full transition-all" href="#servicios">
+<span>Conoce nuestros servicios</span>
+</a>
+<a class="font-label-md text-label-md text-primary hover:text-primary-container underline underline-offset-4 py-2 transition-colors" href="#guia-capilar">
+              Quiero cuidar mi cabello →
+            </a>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-3 gap-3 pt-space-lg max-w-lg">
+<div class="flex flex-col gap-1 p-3 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[22px]">health_and_beauty</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface font-semibold">100% Personalizado</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fórmula adaptada a ti</span>
+</div>
+<div class="flex flex-col gap-1 p-3 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[22px]">biotech</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface font-semibold">Diagnóstico Previo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Análisis de hebra real</span>
+</div>
+<div class="flex flex-col gap-1 p-3 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[22px]">eco</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface font-semibold">Cuidado Consciente</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sin daños ni agresión</span>
+</div>
+</div>
+</div>
+<!-- Right: Boutique Visual Framing -->
+<div class="lg:col-span-5 relative flex justify-center">
+<div class="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-xl bg-surface-container-low">
+<img class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700" data-alt="Warm editorial portrait of Aleja Mc in her boutique hair wellness sanctuary, surrounded by soft terracotta tones, botanical accents, warm daylight streaming through linen curtains, holding natural hair care tools, conveying serenity, warmth and deep hair expertise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHwoFTTVVcFHyDSZ7koLw35RC_pWbSmiBqvS-MzGIkIPu32GiZO-MwuyqXlDYpSlAF4yIU0wXL4NEblQ7QwmVbhBfAN9Bmw5fWiuUKFyLQUxLOvfYyjFGOXDzX2hUUAHXlslV6g8xoMxGBz8Z7LVhSemOwcpwJTMjWYdx6-1xCPzRddH_oQm_uahKghCjmnqixBt-y6RW8crXM4yVr_f-ayT7QZM6vvrWgt8jFLH55qTIHMeSjMa5F"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-surface/90 backdrop-blur-md shadow-md">
+<p class="font-title-editorial text-title-editorial text-on-surface italic">"Cuidar tu cabello también es cuidarte a ti."</p>
+<p class="font-label-caps text-label-caps uppercase text-primary font-semibold mt-1">— Aleja Mc · Cuidado Capilar</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. LOS 4 PILARES DE LA MARCA -->
+<section class="w-full bg-surface-container-low py-space-2xl md:py-space-3xl">
+<div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold">Nuestra Esencia</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-3">Los 4 Pilares de la Experiencia</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Un enfoque holístico donde la ciencia de la fibra se funde con el respeto íntimo a tu identidad.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Pilar 1 -->
+<div class="flex flex-col p-8 rounded-2xl bg-surface shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[26px]">spa</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Cuidado</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Priorizamos la salud profunda, el bienestar del cuero cabelludo y las necesidades fisiológicas reales de cada hebra por encima de modas pasajeras.
+          </p>
+</div>
+<!-- Pilar 2 -->
+<div class="flex flex-col p-8 rounded-2xl bg-surface shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined text-[26px]">tune</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Personalización</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Entendemos que cada cabello es un universo único. Analizamos porosidad, densidad y estilo de vida para diseñar soluciones exclusivamente tuyas.
+          </p>
+</div>
+<!-- Pilar 3 -->
+<div class="flex flex-col p-8 rounded-2xl bg-surface shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-6">
+<span class="material-symbols-outlined text-[26px]">handshake</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Confianza</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Construimos una relación cercana, transparente y profesional. Te explicamos cada paso sin promesas vacías, con honestidad y empatía.
+          </p>
+</div>
+<!-- Pilar 4 -->
+<div class="flex flex-col p-8 rounded-2xl bg-surface shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-primary-fixed/60 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[26px]">favorite</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Amor Propio</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Convertimos cada cita en un ritual de autocuidado y reconciliación, fortaleciendo tu seguridad para abrazar tu textura natural con orgullo.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. SOBRE ALEJA MC (E-E-A-T & PROPÓSITO) -->
+<section class="w-full py-space-2xl md:py-space-3xl bg-surface" id="sobre-aleja">
+<div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Image Duo -->
+<div class="lg:col-span-5 relative">
+<div class="w-full aspect-[3/4] rounded-3xl overflow-hidden shadow-xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of Aleja Mc in her hair studio examining a strand of curl with meticulous care, warm ambient salon setting with minimalist wooden shelves, neutral linens, soft terracotta lighting and natural plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7rXqHdb9lJ8SbwEfomHzLE9hTM6013WEaZgG6FKalyMDwqN3BlcOnhKR0v2IM6p8i3q4j3eP9WPPlao8iFMkwQ1xGmnvXiTwKi7ixbhHCqqkrPtNfiUlFDpgR7Y3Bb8G0GRbWujMOUYMIs-fv6tbvCfoZFeSrS882YTcn9HIR6sdNHWRPeB-85GwJjbuLnBU-ebXii84tbq2Vugx7wwlz5ywjMSZFNRTozE8LCjbaXCRC4zc4DgU9"/>
+</div>
+<div class="hidden sm:block absolute -bottom-6 -right-6 w-48 aspect-square rounded-2xl overflow-hidden shadow-lg bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Close up shot of delicate hands mixing botanical essential oils and nourishing hair masks in a ceramic bowl with bamboo spatula, warm terracotta ambient glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6D4NMyLF-II0lXvDf86oDeCZlp5cWFvfPZX7Pcl2ZDk3Pijtfxmm_WyTEYIJh2XZN3-ctU3eSTtDvy5AOWI1mczJqIZyrFqGfI_BPytUA9bzDVuS1qaP6G_1Oaog5-qughLQgssHZWSBCi4K7lESsvbft2KJVKRYmuT3D2ztJbfsriloTxiIGYpf-N1Qo4a8ZGbvqo8oJRmm65VajguBK1hWsQFXVAYGeDjOe03-pLYCEg36BBfzw"/>
+</div>
+</div>
+<!-- Right: Text & Authentic Mission -->
+<div class="lg:col-span-7 flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold mb-2">Conoce a tu Especialista</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">
+            No se trata de cambiar quién eres, sino de <span class="italic text-primary font-normal">comprender tu cabello.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-4 leading-relaxed">
+            Durante años hemos visto cómo los estándares tradicionales imponen fórmulas genéricas y tratamientos agresivos. En Aleja Mc mi propósito nació de una convicción clara: cada hebra tiene su propia historia, ritmo y necesidad.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            [Biografía profesional: Hola, soy Aleja Mc. Mi trayectoria se ha forjado a través de [Años de experiencia dedicados al cuidado capilar], acompañando a cientos de personas a reconciliarse con su textura real, recuperar melenas dañadas por procesos químicos y aprender a nutrir su cabello desde la raíz hasta las puntas sin falsas promesas.]
+          </p>
+<!-- Credential Badges -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">school</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Formación Certificada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">[Certificaciones y formación especializada en tricología cosmética y salud de la fibra]</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">workspace_premium</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Trayectoria Comprobada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">[Años de experiencia dedicados al cuidado capilar en diagnóstico y personalización]</span>
+</div>
+</div>
+</div>
+<!-- Highlight Quote Box -->
+<div class="p-6 rounded-2xl bg-surface-container-high relative overflow-hidden">
+<span class="material-symbols-outlined text-primary/20 text-[72px] absolute -right-4 -bottom-4 select-none">format_quote</span>
+<p class="font-headline-sm text-headline-sm italic text-on-surface relative z-10 leading-snug">
+              "Mi meta es que salgas de aquí no solo con un cabello revitalizado, sino con la tranquilidad y las herramientas claras para cuidarlo cada día en casa."
+            </p>
+<p class="font-label-caps text-label-caps uppercase text-primary font-semibold mt-3 relative z-10">
+              — Aleja Mc · Cuidado Consciente
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SERVICIOS PERSONALIZADOS -->
+<section class="w-full py-space-2xl md:py-space-3xl bg-surface-container-low" id="servicios">
+<div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-4">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold">Tratamientos a Medida</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2">Nuestros Servicios &amp; Rituales</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Cada servicio se diseña en vivo según tu diagnóstico capilar. Sin recetas fijas: la formulación exacta se adapta a tu fibra.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Servicio 1 -->
+<div class="flex flex-col bg-surface rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start justify-between gap-4 mb-4">
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold px-3 py-1 rounded-full bg-primary-fixed/40">Servicio Insignia</span>
+<div class="text-right">
+<span class="font-label-caps text-label-caps text-on-surface-variant block uppercase">Duración</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">[60 a 75 min]</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Diagnóstico y Asesoría Capilar Integral</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Evaluación detallada y personalizada del cuero cabelludo y la fibra capilar. Identificamos porosidad, nivel de deshidratación, sensibilidad dérmica y hábitos diarios.
+          </p>
+<div class="p-4 rounded-xl bg-surface-container-low mb-6 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Beneficios:</strong> Rutina clara a medida, detección temprana de daños.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">group</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Dirigido a:</strong> Todo tipo de cabello (liso, ondulado, rizado, afro).</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">payments</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Inversión:</strong> [Consultar tarifa / Agregar precio]</span>
+</div>
+</div>
+<div class="mt-auto pt-4 flex items-center justify-between">
+<a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full transition-all" href="#contacto">
+<span>Reservar asesoría</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Presencial en Estudio</span>
+</div>
+</div>
+<!-- Servicio 2 -->
+<div class="flex flex-col bg-surface rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start justify-between gap-4 mb-4">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold px-3 py-1 rounded-full bg-secondary-fixed/50">Restauración Botánica</span>
+<div class="text-right">
+<span class="font-label-caps text-label-caps text-on-surface-variant block uppercase">Duración</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">[90 a 120 min]</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Tratamiento de Nutrición y Reconstrucción Profunda</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Recuperación intensiva de la hebra maltratada por procesos térmicos o químicos (tintes, decoloraciones). Reposición lipídica y proteica sin siliconas pesadas.
+          </p>
+<div class="p-4 rounded-xl bg-surface-container-low mb-6 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Beneficios:</strong> Fuerza, flexibilidad, sellado de cutícula y brillo natural.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">group</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Dirigido a:</strong> Cabellos secos, quebradizos o sensibilizados.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">payments</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Inversión:</strong> [Agregar información de precio / Según longitud]</span>
+</div>
+</div>
+<div class="mt-auto pt-4 flex items-center justify-between">
+<a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full transition-all" href="#contacto">
+<span>Reservar tratamiento</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Con Diagnóstico Incluido</span>
+</div>
+</div>
+<!-- Servicio 3 -->
+<div class="flex flex-col bg-surface rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start justify-between gap-4 mb-4">
+<span class="font-label-caps text-label-caps uppercase text-tertiary font-semibold px-3 py-1 rounded-full bg-tertiary-fixed/60">Ondas &amp; Rizos</span>
+<div class="text-right">
+<span class="font-label-caps text-label-caps text-on-surface-variant block uppercase">Duración</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">[90 min aprox]</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Terapia de Definición y Vitalidad para Rizos y Ondas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Protocolo botánico especializado para hidratar profundamente, moldear el patrón y potenciar la curvatura natural sin apelmazar ni alterar la estructura.
+          </p>
+<div class="p-4 rounded-xl bg-surface-container-low mb-6 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Beneficios:</strong> Control de frizz duradero, elasticidad y definición con rebote.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">group</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Dirigido a:</strong> Cabello ondulado (2A-2C), rizado (3A-3C) y afro (4A-4C).</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">payments</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Inversión:</strong> [Agregar información de precio]</span>
+</div>
+</div>
+<div class="mt-auto pt-4 flex items-center justify-between">
+<a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full transition-all" href="#contacto">
+<span>Reservar cita</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Asesoría de Estilizado</span>
+</div>
+</div>
+<!-- Servicio 4 -->
+<div class="flex flex-col bg-surface rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start justify-between gap-4 mb-4">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold px-3 py-1 rounded-full bg-secondary-fixed/50">Salud del Cuero Cabelludo</span>
+<div class="text-right">
+<span class="font-label-caps text-label-caps text-on-surface-variant block uppercase">Duración</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">[60 min]</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Ritual Detox y Equilibrio del Cuero Cabelludo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Exfoliación botánica y purificación suave para remover acumulación de productos sintéticos, regular el sebo y calmar irritaciones o descamaciones.
+          </p>
+<div class="p-4 rounded-xl bg-surface-container-low mb-6 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Beneficios:</strong> Oxigenación folicular, ligereza en raíz, crecimiento sano.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">group</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Dirigido a:</strong> Cuero cabelludo graso, sensible o con acumulación.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">payments</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Inversión:</strong> [Agregar información de precio]</span>
+</div>
+</div>
+<div class="mt-auto pt-4 flex items-center justify-between">
+<a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full transition-all" href="#contacto">
+<span>Reservar ritual</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Masaje Craneal Relajante</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. LA EXPERIENCIA ALEJA MC (PASO A PASO) -->
+<section class="w-full py-space-2xl md:py-space-3xl bg-surface">
+<div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">El Camino hacia tu Mejor Versión</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-3">La Experiencia Aleja Mc</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Un recorrido pausado, minucioso y transparente diseñado para cuidarte de principio a fin.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Step 1 -->
+<div class="p-8 rounded-3xl bg-surface-container-low flex flex-col relative overflow-hidden">
+<span class="font-display-hero text-primary/15 absolute right-6 top-4 font-headline-lg select-none">01</span>
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold mb-2">Paso Uno</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Escuchar</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Comenzamos con una conversación íntima sobre tu rutina, historial de químicos, frustraciones pasadas y lo que sueñas sentir al tocar tu cabello.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="p-8 rounded-3xl bg-surface-container-low flex flex-col relative overflow-hidden">
+<span class="font-display-hero text-primary/15 absolute right-6 top-4 font-headline-lg select-none">02</span>
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold mb-2">Paso Dos</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Conocer</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Evaluamos mediante tacto y micro-diagnóstico la textura, porosidad, grosor de la hebra y el estado bio-fisiológico de tu cuero cabelludo.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="p-8 rounded-3xl bg-surface-container-low flex flex-col relative overflow-hidden">
+<span class="font-display-hero text-primary/15 absolute right-6 top-4 font-headline-lg select-none">03</span>
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold mb-2">Paso Tres</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Analizar</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Determinamos con exactitud matemática y botánica si tu cabello reclama hidratación (agua), nutrición (lípidos) o reconstrucción (proteína).
+          </p>
+</div>
+<!-- Step 4 -->
+<div class="p-8 rounded-3xl bg-surface-container-low flex flex-col relative overflow-hidden">
+<span class="font-display-hero text-primary/15 absolute right-6 top-4 font-headline-lg select-none">04</span>
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold mb-2">Paso Cuatro</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Recomendar</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Diseñamos un plan exclusivo frente a ti. Te explicamos los ingredientes activos que aplicaremos y por qué son los indicados para ti.
+          </p>
+</div>
+<!-- Step 5 -->
+<div class="p-8 rounded-3xl bg-surface-container-low flex flex-col relative overflow-hidden">
+<span class="font-display-hero text-primary/15 absolute right-6 top-4 font-headline-lg select-none">05</span>
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold mb-2">Paso Cinco</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Realizar el Servicio</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Vivencia de bienestar pleno en nuestro estudio: técnicas suaves de aplicación, temperatura controlada y un ambiente libre de prisas.
+          </p>
+</div>
+<!-- Step 6 -->
+<div class="p-8 rounded-3xl bg-surface-container-low flex flex-col relative overflow-hidden">
+<span class="font-display-hero text-primary/15 absolute right-6 top-4 font-headline-lg select-none">06</span>
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold mb-2">Paso Seis</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Orientar y Acompañar</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Te entregamos una guía clara paso a paso con los hábitos y productos ideales para mantener la salud de tu melena en casa fácilmente.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. GUÍA EDUCATIVA: TIPOS DE CABELLO Y NECESIDADES -->
+<section class="w-full py-space-2xl md:py-space-3xl bg-surface-container-low" id="guia-capilar">
+<div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="max-w-3xl mb-space-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold">Guía Pedagógica Aleja Mc</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-4">Tipos de Cabello y sus Necesidades Reales</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          No existe una fórmula mágica universal; cada hebra tiene su propia voz y necesidad. Aquí te mostramos cómo identificamos y tratamos cada textura.
+        </p>
+</div>
+<!-- Tabbed / Card Interactive Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Tipo Liso -->
+<div class="p-6 rounded-2xl bg-surface shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm text-on-surface">Cabello Liso</span>
+<span class="font-label-caps text-label-caps bg-surface-container px-2.5 py-1 rounded-full text-secondary">Tipo 1</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+            Suele distribuir con facilidad los aceites naturales del cuero cabelludo pero tiende a perder volumen o apelmazarse con productos pesados.
+          </p>
+<div class="mt-auto pt-3 bg-surface-container-low p-3 rounded-xl">
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold block mb-1">Clave de Cuidado:</span>
+<p class="font-body-sm text-body-sm text-on-surface">Hidratación ligera de base acuosa, limpieza equilibrada y volumen en raíz sin peso.</p>
+</div>
+</div>
+<!-- Tipo Ondulado -->
+<div class="p-6 rounded-2xl bg-surface shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm text-on-surface">Cabello Ondulado</span>
+<span class="font-label-caps text-label-caps bg-surface-container px-2.5 py-1 rounded-full text-secondary">Tipo 2A - 2C</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+            Curvatura en 'S' propensa al frizz y a perder su forma con facilidad. Requiere hidratación sin exceso de mantecas espesas.
+          </p>
+<div class="mt-auto pt-3 bg-surface-container-low p-3 rounded-xl">
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold block mb-1">Clave de Cuidado:</span>
+<p class="font-body-sm text-body-sm text-on-surface">Definición liviana, humectación balanceada y técnicas de fijación flexible.</p>
+</div>
+</div>
+<!-- Tipo Rizado -->
+<div class="p-6 rounded-2xl bg-surface shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm text-on-surface">Cabello Rizado</span>
+<span class="font-label-caps text-label-caps bg-surface-container px-2.5 py-1 rounded-full text-secondary">Tipo 3A - 3C</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+            Espirales definidas con tendencia natural a la sequedad en medios y puntas, ya que el sebo natural no desciende con la misma facilidad.
+          </p>
+<div class="mt-auto pt-3 bg-surface-container-low p-3 rounded-xl">
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold block mb-1">Clave de Cuidado:</span>
+<p class="font-body-sm text-body-sm text-on-surface">Nutrición lipídica profunda, retención de agua y técnicas de sellado de cutícula.</p>
+</div>
+</div>
+<!-- Tipo Afro -->
+<div class="p-6 rounded-2xl bg-surface shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm text-on-surface">Cabello Afro / Coily</span>
+<span class="font-label-caps text-label-caps bg-surface-container px-2.5 py-1 rounded-full text-secondary">Tipo 4A - 4C</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+            Patrón en zigzag denso y sumamente frágil. Requiere máxima retención de humedad, aceites emolientes y manipulación sumamente cuidadosa.
+          </p>
+<div class="mt-auto pt-3 bg-surface-container-low p-3 rounded-xl">
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold block mb-1">Clave de Cuidado:</span>
+<p class="font-body-sm text-body-sm text-on-surface">Mantequillas botánicas (karité/mango), protección de puntas y retención de longitud.</p>
+</div>
+</div>
+<!-- Dañado o Químico -->
+<div class="p-6 rounded-2xl bg-surface shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm text-on-surface">Tinturado o Procesado</span>
+<span class="font-label-caps text-label-caps bg-surface-container px-2.5 py-1 rounded-full text-primary">Sensibilizado</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+            Fibra con pérdida de puentes de disulfuro y corteza debilitada por tintes o decoloraciones. Porosidad alta con rotura constante.
+          </p>
+<div class="mt-auto pt-3 bg-surface-container-low p-3 rounded-xl">
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold block mb-1">Clave de Cuidado:</span>
+<p class="font-body-sm text-body-sm text-on-surface">Reconstrucción proteica (aminoácidos) y acidificación para sellar cutícula.</p>
+</div>
+</div>
+<!-- Cuero Cabelludo & Frizz -->
+<div class="p-6 rounded-2xl bg-surface shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm text-on-surface">Frizz &amp; Falta de Agua</span>
+<span class="font-label-caps text-label-caps bg-surface-container px-2.5 py-1 rounded-full text-secondary">Deshidratado</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+            El frizz es la señal de auxilio de un cabello buscando humedad en el ambiente. Ocurre en cualquier tipo de textura si falta hidratación.
+          </p>
+<div class="mt-auto pt-3 bg-surface-container-low p-3 rounded-xl">
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold block mb-1">Clave de Cuidado:</span>
+<p class="font-body-sm text-body-sm text-on-surface">Humectantes naturales (aloe, pantenol) sellados con aceites botánicos puros.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. GALERÍA DE RESULTADOS & ESPACIO -->
+<section class="w-full py-space-2xl md:py-space-3xl bg-surface">
+<div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-4">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold">Atmósfera &amp; Casos Reales</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2">Nuestro Espacio y Resultados</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm italic">
+          *Antes y después mostrados únicamente con autorización expresa y casos reales.
+        </p>
+</div>
+<!-- Bento Grid Visuals -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Photo 1: Espacio -->
+<div class="flex flex-col rounded-3xl overflow-hidden bg-surface-container-low shadow-sm">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Minimalist luxury hair studio interior with soft natural terracotta walls, bespoke wooden mirrors, green indoor plants, warm indirect sunlight, tranquil and quiet atmosphere for hair restoration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJc0X9FpBqudevcEVZmTSjJzcjbjBVNKJHN-r--Jk_BGQ9vwpl7igwl9LM_26ZuizJtipRLfSo1dB9ET-tRnc-libXh5tOZb7B6BNoI6r4vx9ZWqwUbiPZ4oWyejS4FgACse1PDb4B4IQjfAw7trmoFWElfdqCUGvpCRUqs2tJIjs4kTVSHB66mDRAf862aljfL2OQAq3dNbb1ZL7lasywkmQBrkN7J2SUAmw3oKHq14Q7Tkk-w6Oj"/>
+</div>
+<div class="p-4">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">El Estudio</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">[Fotografía: Espacio boutique y de relajación Aleja Mc]</p>
+</div>
+</div>
+<!-- Photo 2: Diagnóstico -->
+<div class="flex flex-col rounded-3xl overflow-hidden bg-surface-container-low shadow-sm">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Close up of a professional hair diagnosis consultation, delicate hands analyzing strands of naturally textured hair with specialized diagnostic tools, soft ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsV1i0QeGCzD_P4d9BQkUxMb1sA-AxWT_k9EPc5J8cjNydUvLFmUpDs87PPFw9-9wg4S_RnGbwz40aLOVhPXQ1JxrzHK6hapM6y9bCwl2pXyvOtUot7ECJntvxz1fjrdLmKe6-rtpJpYDKAqmiYp79OLmO5qRvKXbuBfuo1Ry3Qdjx8_LITgALltQp7Uwt_IBAgUtVNOH1scANaty2g5DaqxxiCRxGROWvsGSY8sXWlE9EuQPJP3p_"/>
+</div>
+<div class="p-4">
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold">En Proceso</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">[Fotografía: Diagnóstico y aplicación personalizada]</p>
+</div>
+</div>
+<!-- Photo 3: Rizado/Ondulado -->
+<div class="flex flex-col rounded-3xl overflow-hidden bg-surface-container-low shadow-sm">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Gorgeous healthy curl definition result, bouncy natural curly hair with deep luster, soft warm terracotta studio background, luminous and hydrating finish without frizz" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkHsVLOpTxOvMeYV5sC8LUAnwDoKcrNdmEUYMD9vbZ706xfWHOKIn_1NKh_H3AbefJniz3u6bc3za2TD6sWmGeK9UxNKf0m2rQIIkdA1PL1Gs9w6_FRVX7oinwMyXlPTEhaNomwraNTG2XzjXU8gB0ITDtO3ZSvvb2Ynz5uiSbv3GC94nRgqT4q8Jcre_lRechNP3Xo8LmUqGVx4LjhsBjlkwg9ytN1FxKDe_OwY3upHb2uYZSn-_2"/>
+</div>
+<div class="p-4">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Definición &amp; Rebote</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">[Fotografía: Textura y salud de cabello rizado real]</p>
+</div>
+</div>
+<!-- Photo 4: Liso Saludable -->
+<div class="flex flex-col rounded-3xl overflow-hidden bg-surface-container-low shadow-sm">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Editorial close up of silky, shiny straight hair flowing over shoulders, natural healthy movement and cuticular reflection without greasy residue, warm studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjAYLaa-rtMisQsjpY6Id1VqAx5nIorImdbSeMmNkyLKhLlNE4c_qq96R-cPHeK2tfKNicuYTM4KSetT25QSvFyEFc3Bk8yyPSr1Yv25rT56orwoQbGbcKIkJbo59Uf9BGCOCFGY78vE8MrZf4HTYTtKR-xwxUCrIsDJfdN_dPl3szV_GGOZ7IuxXV1iTZi1L9BVwMDSHTOHZajmq3kFMCI6Adp7ZyKAlppv_RxPPFkthVBFeVzXdS"/>
+</div>
+<div class="p-4">
+<span class="font-label-caps text-label-caps uppercase text-tertiary font-semibold">Brillo &amp; Sedosidad</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">[Fotografía: Textura y brillo de cabello liso saludable]</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. BLOG & CONSEJOS CAPILARES (SEO EDUCATIVO) -->
+<section class="w-full py-space-2xl md:py-space-3xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-4">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold">Aprende con Aleja</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2">Consejos &amp; Educación Capilar</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Respuestas fundamentadas para resolver dudas frecuentes y empoderarte en el cuidado diario de tu hebra.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Articulo 1 -->
+<article class="flex flex-col bg-surface rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold mb-2">Fundamentos</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 leading-snug">
+            ¿Cómo saber qué necesita mi cabello? (Hidratación, Nutrición o Reparación)
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+            Aprende a diferenciar el test de elasticidad casero y a escuchar las señales que indican si tu cabello pide agua, lípidos o queratina.
+          </p>
+<div class="mt-auto pt-4 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>5 min lectura</span>
+<span class="text-primary font-semibold hover:underline">Leer artículo →</span>
+</div>
+</article>
+<!-- Articulo 2 -->
+<article class="flex flex-col bg-surface rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold mb-2">Rizos &amp; Ondas</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 leading-snug">
+            Rutina capilar en 4 pasos: Cómo cuidar ondas y rizos sin complicaciones
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+            Elimina rutinas eternas de 12 productos. Te enseñamos la técnica simplificada para definir sin perder el movimiento natural.
+          </p>
+<div class="mt-auto pt-4 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>4 min lectura</span>
+<span class="text-primary font-semibold hover:underline">Leer artículo →</span>
+</div>
+</article>
+<!-- Articulo 3 -->
+<article class="flex flex-col bg-surface rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
+<span class="font-label-caps text-label-caps uppercase text-tertiary font-semibold mb-2">Soluciones Reales</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 leading-snug">
+            Cómo reducir el frizz de forma natural y duradera
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+            El secreto no es engrasar el cabello con siliconas, sino sellar la cutícula con aceites botánicos puros en el momento exacto del secado.
+          </p>
+<div class="mt-auto pt-4 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>6 min lectura</span>
+<span class="text-primary font-semibold hover:underline">Leer artículo →</span>
+</div>
+</article>
+<!-- Articulo 4 -->
+<article class="flex flex-col bg-surface rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold mb-2">Higiene &amp; Hábitos</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 leading-snug">
+            Errores comunes al lavar el cabello y con qué frecuencia deberías hacerlo
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+            Temperatura del agua, técnica de frotado y mitos sobre lavar todos los días vs. espaciar los lavados. Todo lo que tu dermis agradece.
+          </p>
+<div class="mt-auto pt-4 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>4 min lectura</span>
+<span class="text-primary font-semibold hover:underline">Leer artículo →</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 9. TESTIMONIOS REALES -->
+<section class="w-full py-space-2xl md:py-space-3xl bg-surface">
+<div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Voces Reales</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-3">Historias de Transformación</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">La mayor satisfacción es ver cómo nuestras clientas abrazan su cabello con total libertad y tranquilidad.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonio 1 -->
+<div class="p-8 rounded-3xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-6">
+              "[Testimonio real de cliente: Llegué sintiéndome frustrada con mis ondas, no lograba que dejaran de esponjarse. Aleja se tomó el tiempo de examinar cada mechón y me enseñó que estaba usando productos demasiado pesados. Mi cabello nunca se había sentido tan suave y ligero.]"
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center font-title-editorial text-primary font-semibold">
+              M
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">[Nombre de cliente 1]</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Asesoría &amp; Diagnóstico Integral</span>
+</div>
+</div>
+</div>
+<!-- Testimonio 2 -->
+<div class="p-8 rounded-3xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-6">
+              "[Testimonio real de cliente: Después de tres decoloraciones mi hebra estaba elástica y quebradiza. El tratamiento de reconstrucción profunda le devolvió el cuerpo y la textura. Ahora sé exactamente qué mascarilla usar en casa sin gastar de más.]"
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center font-title-editorial text-secondary font-semibold">
+              C
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">[Nombre de cliente 2]</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reconstrucción Profunda</span>
+</div>
+</div>
+</div>
+<!-- Testimonio 3 -->
+<div class="p-8 rounded-3xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-6">
+              "[Testimonio real de cliente: La calidez y el respeto con el que Aleja te atiende no tiene comparación. No intenta venderte productos innecesarios; te enseña a amar tu cabello rizado tal como es. La experiencia en el estudio es pura paz.]"
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center font-title-editorial text-tertiary font-semibold">
+              V
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">[Nombre de cliente 3]</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Terapia de Rizos &amp; Aceptación</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. PREGUNTAS FRECUENTES (FAQPage ACCORDION) -->
+<section class="w-full py-space-2xl md:py-space-3xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="max-w-2xl mx-auto text-center mb-space-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold">Resolvemos tus Inquietudes</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-3">Preguntas Frecuentes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Queremos que asistas con absoluta seguridad y transparencia sobre nuestros protocolos.
+        </p>
+</div>
+<div class="max-w-3xl mx-auto flex flex-col gap-4" id="faq-accordion">
+<!-- FAQ 1 -->
+<details class="group bg-surface rounded-2xl p-6 shadow-sm open:shadow-md transition-all cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿Cómo sé qué tratamiento necesita mi cabello antes de ir?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 pt-4 border-t border-surface-container font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            No necesitas saberlo previamente. Todas nuestras citas se inician con una fase de diagnóstico minucioso. Allí analizamos la elasticidad, el nivel de hidratación y el estado dérmico para aplicar exactamente los nutrientes que tu fibra exige.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface rounded-2xl p-6 shadow-sm open:shadow-md transition-all cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿Atiendes todo tipo de texturas de cabello?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 pt-4 border-t border-surface-container font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Absolutamente sí. Tenemos experiencia técnica y protocolos formulados para cabellos lacios, ondulados, rizados y afros (patrones 1A a 4C), respetando siempre su morfología particular.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface rounded-2xl p-6 shadow-sm open:shadow-md transition-all cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿Cómo puedo reservar mi cita y con cuánta anticipación?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 pt-4 border-t border-surface-container font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Las reservas se coordinan de manera directa vía WhatsApp oficial. Para asegurarte un espacio dedicado sin prisas, sugerimos agendar con 1 a 2 semanas de anticipación, especialmente para fines de semana.
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface rounded-2xl p-6 shadow-sm open:shadow-md transition-all cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿Qué debo hacer antes de asistir a mi cita?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 pt-4 border-t border-surface-container font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Te pedimos venir con el cabello seco, sin moños ni peinados tirantes y sin geles o lacas pesadas aplicadas ese mismo día. Esto nos permite observar el patrón y la secreción sebácea en su estado más genuino.
+          </div>
+</details>
+<!-- FAQ 5 -->
+<details class="group bg-surface rounded-2xl p-6 shadow-sm open:shadow-md transition-all cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿Los tratamientos tienen resultados garantizados para cualquier persona?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 pt-4 border-t border-surface-container font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Los resultados de nutrición, suavidad y brillo son perceptibles desde la primera sesión. Sin embargo, la salud capilar a largo plazo es un proceso conjunto: te brindaremos el acompañamiento para que el mantenimiento en tu hogar consolide los avances obtenidos en el estudio.
+          </div>
+</details>
+<!-- FAQ 6 -->
+<details class="group bg-surface rounded-2xl p-6 shadow-sm open:shadow-md transition-all cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none">
+<span>¿Ofrecen asesorías online o seguimiento en casa?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 pt-4 border-t border-surface-container font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Sí. Si no te encuentras en [CIUDAD], ofrecemos sesiones de diagnóstico digital vía videollamada para analizar tu rutina actual, revisar tus productos y estructurar un plan de cuidado personalizado.
+          </div>
+</details>
+</div>
+</div>
+</section>
+<!-- 11. CONTACTO, UBICACIÓN & RESERVAS (SEO LOCAL) -->
+<section class="w-full py-space-2xl md:py-space-3xl bg-surface" id="contacto">
+<div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Formulario & WhatsApp CTA -->
+<div class="lg:col-span-7 flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-semibold mb-2">Comienza Hoy Tu Cuidado</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-3">Agenda Tu Sesión con Aleja</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+            Cuéntanos sobre tu cabello o escríbenos directamente por WhatsApp para coordinar tu cita previa y brindarte una atención 100% personalizada.
+          </p>
+<!-- WhatsApp Direct Action -->
+<div class="p-6 rounded-2xl bg-secondary-fixed/40 mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Habla directamente con Aleja</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Respuesta rápida para consultas y disponibilidad</span>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md px-6 py-2.5 rounded-full transition-all shrink-0" href="https://wa.me/0000000000" rel="noopener noreferrer" target="_blank">
+<span>Abrir WhatsApp</span>
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+<!-- Contact Form -->
+<form class="flex flex-col gap-4 bg-surface-container-low p-8 rounded-3xl shadow-sm" onsubmit="event.preventDefault(); alert('¡Gracias! Nos pondremos en contacto contigo a la brevedad.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-semibold">Tu Nombre Completo</label>
+<input class="px-4 py-3 rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Ej. Valentina Morales" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-semibold">Teléfono / WhatsApp</label>
+<input class="px-4 py-3 rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="+00 000 000000" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-semibold">Tipo de Cabello Aprox.</label>
+<select class="px-4 py-3 rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-sm">
+<option>Liso</option>
+<option>Ondulado</option>
+<option>Rizado</option>
+<option>Afro</option>
+<option>No estoy segura / Por determinar</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-semibold">Servicio de Interés</label>
+<select class="px-4 py-3 rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-sm">
+<option>Diagnóstico y Asesoría Integral</option>
+<option>Nutrición &amp; Reconstrucción Profunda</option>
+<option>Terapia de Definición para Rizos</option>
+<option>Ritual Detox Cuero Cabelludo</option>
+<option>Asesoría Online</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant font-semibold">¿Qué es lo que más te preocupa de tu cabello hoy?</label>
+<textarea class="px-4 py-3 rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Cuéntame si sientes resequedad, caída, frizz excesivo o daño por procesos químicos..." rows="3"></textarea>
+</div>
+<button class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md py-3.5 px-8 rounded-full shadow-md hover:scale-[1.01] transition-all self-start mt-2" type="submit">
+<span>Enviar solicitud de cita</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+</div>
+<!-- Local SEO Box & Location Details -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="p-8 rounded-3xl bg-surface-container-low shadow-sm mb-6 flex flex-col">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold mb-2">Ubicación &amp; Sede Oficial</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-6">Estudio Aleja Mc</h3>
+<div class="flex flex-col gap-5">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Especialista en cuidado capilar en:</span>
+<p class="font-body-md text-body-md text-on-surface-variant">[ZONA O BARRIO], [CIUDAD], [PAÍS]</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">[DIRECCIÓN COMPLETA - Ej: Calle Principal #12-34]</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-secondary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Horarios de Atención:</span>
+<p class="font-body-md text-body-md text-on-surface-variant">Martes a Sábado: 9:00 AM – 7:00 PM</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Atención exclusiva con reserva previa</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Contacto Directo:</span>
+<p class="font-body-md text-body-md text-on-surface-variant">[Número de contacto oficial / WhatsApp]</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">contacto@alejamc.com</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Studio Map Card -->
+<div class="w-full h-64 bg-cover bg-center rounded-3xl shadow-sm overflow-hidden relative flex items-end p-4" data-location="Bogota, Colombia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5WSSZGTBUzNxbof2a3w4U3YuQMn0BXT8RrFHS8_sIzmQQW15oLEbJGkIz7iaMWGL0E66MnRiw8bi0g9OI8_Vm5mx_VUzHB131s-JleFGqN8GiLkVfngJhyJBRNE9HySLwuqFFGln_CTPYJl1vhUUsgB508no4H2FUKzpJxtlmaIv429VNsBfifiCJPX_NE-xH-0xwghoX4vfHmOJPOfAoMiDs3BJh4rAVV0enFFvSKszp_PNMFnBQ')">
+<div class="p-3 bg-surface/90 backdrop-blur-md rounded-xl shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">pin_drop</span>
+<span class="font-label-caps text-label-caps uppercase font-semibold text-on-surface">[CIUDAD], [PAÍS] · Sede Principal</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low mt-space-3xl"><div class="max-w-container-max mx-auto px-gutter-mobile md:px-gutter-tablet lg:px-gutter-desktop pt-space-2xl pb-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-y-12 lg:gap-x-10 mb-space-2xl"><div class="lg:col-span-4 flex flex-col"><div class="flex items-center gap-3 mb-space-md"><img alt="Logo Aleja Mc" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VMs85Jwvzs6xi2rZmtlgeJwpZcSsEJOuVYgeniywUydqD02mRVZbgOCmyhhLy4LbK-kTlJ1gcsUk7V1HkQ2bG2-zUxkA3GTuku3mQOvGf8m7neWuxZesODTWf3FgJqKW3gJwFecEpSvlV3fLSdYxO63GJOlgY21pO37yyCRJTu9K9fYeclJsFvqZkuSWbBXPCb2RY63M0Tb1l-Xwuo9caOzOrj9KNjxjfakZYMGZvDKOf9drqU_EC8fQ"/><div class="flex flex-col"><span class="font-title-editorial text-title-editorial text-on-surface leading-tight">Aleja Mc</span><span class="font-label-caps text-label-caps text-on-surface-variant">Belleza &amp; Salud Capilar</span></div></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md max-w-sm">Un santuario de alta peluquería botánica y diagnóstico capilar integral. Restauración personalizada, rituales orgánicos y cuidado consciente para cada tipo de hebra.</p><div class="flex items-center gap-3"><a aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">chat</span></a><a aria-label="Instagram" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="Email" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a></div></div><div class="lg:col-span-3 flex flex-col"><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Exploración</h4><ul class="flex flex-col gap-2.5"><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="sobre-aleja" href="#">Sobre Aleja &amp; Filosofía</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="servicios" href="#">Servicios &amp; Rituales</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="tipos-de-cabello" href="#">Guía de Tipos de Cabello</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="experiencia" href="#">La Experiencia en Estudio</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="blog" href="#">Artículos &amp; Guías de Cuidado</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="preguntas-frecuentes" href="#">Preguntas Frecuentes (FAQ)</a></li></ul></div><div class="lg:col-span-3 flex flex-col"><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Sede &amp; Horarios</h4><div class="flex flex-col gap-3"><div class="flex items-start gap-2.5 text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">pin_drop</span><div class="font-body-md text-body-md"><p class="text-on-surface font-medium">[DIRECCIÓN]</p><p>[ZONA O BARRIO]</p><p>[CIUDAD], [PAÍS]</p></div></div><div class="flex items-start gap-2.5 text-on-surface-variant pt-2"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">schedule</span><div class="font-body-md text-body-md"><p class="text-on-surface font-medium">Martes a Sábado</p><p>9:00 AM – 7:00 PM</p><p class="text-on-surface-variant font-label-caps text-label-caps mt-1 uppercase text-tertiary">Domingo y Lunes Cerrado</p></div></div></div></div><div class="lg:col-span-2 flex flex-col"><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Reservas</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Agenda de diagnósticos y tratamientos personalizados mediante cita previa.</p><a class="inline-flex items-center justify-center bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md py-2.5 px-4 rounded-full text-center shadow-[0_4px_12px_rgba(150,67,43,0.15)] transition-all mb-4" data-path="agenda-tu-cita" href="#">Agendar Cita</a><span class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> Cupos limitados por semana</span></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-4 text-on-surface-variant"><p class="font-body-sm text-body-sm text-center md:text-left">© 2025 Aleja Mc · Cuidado, Confianza y Belleza Capilar. Todos los derechos reservados.</p><div class="flex items-center gap-6 font-body-sm text-body-sm"><a class="hover:text-primary transition-colors" data-path="contacto" href="#">Contacto Directo</a><a class="hover:text-primary transition-colors" href="#">Políticas de Reserva</a><a class="hover:text-primary transition-colors" href="#">Términos &amp; Privacidad</a></div></div></div></footer></body></html>
